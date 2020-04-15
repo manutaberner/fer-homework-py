@@ -98,16 +98,10 @@ def validacioSeient(SeatMap,seat): #FUNCION A UTILIZAR
             # Processament
             errcod = asientoValido(SeatMap, seat)
             # Sortida de dades
-            print(errorInSeatTbl[errcod])
+            return errcod
             # Entrada de dades
-            option = input("Continuar (-/n)? ")
-            if len(option)>0 and (option[0]=='N' or option[0]=='n'):
-                present = False
-            else:
-                # present = True
-                seat = input("Codi de seient = ")
     else:
-        print("No s'ha trobat el mapa de seients")    
+        return print("No s'ha trobat el mapa de seients")    
 
 
 ############################### FUNCIONES LISTA DE PASAJEROS#####################################
